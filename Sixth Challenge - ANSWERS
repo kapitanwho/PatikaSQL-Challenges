@@ -1,0 +1,16 @@
+# PatikaSQL-Challenges
+Patika's SQL Challenges for study
+
+First question answer : SELECT ROUND(AVG(rental_rate), 3) FROM film
+
+Second question answer : SELECT COUNT(title) FROM film
+                         WHERE title LIKE 'C%'
+
+Third question answer : SELECT rental_rate, title, length FROM film
+                        WHERE rental_rate = 0.99
+                        ORDER BY length DESC
+                        LIMIT 1
+
+Fifth question answer : SELECT COUNT(DISTINCT replacement_cost) FROM film
+                        WHERE length > 150
+
