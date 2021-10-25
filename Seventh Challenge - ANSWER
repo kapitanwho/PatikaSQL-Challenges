@@ -1,0 +1,17 @@
+# PatikaSQL-Challenges
+Patika's SQL Challenges for study
+
+First question answer : SELECT rating,COUNT(rating) FROM film
+                        GROUP BY rating
+
+Second question answer : SELECT replacement_cost, COUNT(*) FROM film 
+                         GROUP BY replacement_cost
+                         HAVING COUNT(*) > 50
+
+Third question answer : SELECT store_id, COUNT(customer_id) FROM customer
+                        GROUP BY store_id
+
+Fourth question answer : SELECT country_id, COUNT(*) FROM city
+                         GROUP BY country_id
+                         ORDER BY COUNT(*) DESC
+                         LIMIT 1
