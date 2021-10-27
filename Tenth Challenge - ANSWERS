@@ -1,0 +1,13 @@
+# PatikaSQL-Challenges
+Patika's SQL Challenges for study
+
+First question answer : SELECT country.country, city.city FROM city
+                          LEFT JOIN country ON city.country_id = country.country_id
+                          ORDER BY city_id DESC;
+
+Second question answer : SELECT customer.first_name, customer.last_name, payment.payment_id FROM customer
+                           RIGHT JOIN payment ON payment.customer_id = customer.customer_id;
+
+
+Third question answer : SELECT customer.first_name, customer.last_name, rental.rental_id FROM rental
+                          FULL JOIN customer ON customer.customer_id = rental.customer_id
