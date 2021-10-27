@@ -1,0 +1,68 @@
+# PatikaSQL-Challenges
+Patika's SQL Challenges for study
+
+
+First question answer : (
+                        SELECT actor.first_name FROM actor
+                        	ORDER BY actor.first_name
+                        )
+                        UNION
+                        (
+                        SELECT customer.first_name FROM customer
+                        	ORDER BY customer.first_name
+                        )
+
+
+Second question answer : (
+                         SELECT actor.first_name FROM actor
+                         	ORDER BY actor.first_name
+                         )
+                         INTERSECT
+                         (
+                         SELECT customer.first_name FROM customer
+                         	ORDER BY customer.first_name
+                         )
+                          
+ 
+Third question answer : (
+                        SELECT actor.first_name FROM actor
+                        	ORDER BY actor.first_name
+                        )
+                        EXCEPT
+                        (
+                        SELECT customer.first_name FROM customer
+                        	ORDER BY customer.first_name
+                        )
+
+
+Fourth question answer : 
+                         (
+                         SELECT actor.first_name FROM actor
+                           ORDER BY actor.first_name
+                         )
+                         UNION ALL
+                         (
+                         SELECT customer.first_name FROM customer
+                           ORDER BY customer.first_name
+                         )
+
+
+                         (
+                         SELECT actor.first_name FROM actor
+                           ORDER BY actor.first_name
+                         )
+                         INTERSECT ALL
+                         (	
+                         SELECT customer.first_name FROM customer
+                           ORDER BY customer.first_name
+                         )
+
+                         (
+                         SELECT actor.first_name FROM actor
+                           ORDER BY actor.first_name
+                         )
+                         EXCEPT ALL
+                         (	
+                         SELECT customer.first_name FROM customer
+                           ORDER BY customer.first_name
+                         )
