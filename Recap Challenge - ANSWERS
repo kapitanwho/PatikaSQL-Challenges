@@ -1,0 +1,29 @@
+# PatikaSQL-Challenges
+Patika's SQL Challenges for study
+
+First question answer : SELECT film.title, film.length, film.replacement_cost FROM film 
+                          WHERE film.title LIKE 'K%' AND film.length < 
+                          (
+                          SELECT MAX(film.length) FROM film
+                          )
+                          ORDER BY film.length DESC, replacement_cost
+
+Second question answer : SELECT film.rating,COUNT(*) FROM film
+                          GROUP BY film.rating
+                          ORDER BY COUNT(*) DESC
+                          LIMIT 1
+
+Third question answer : SELECT customer.first_name, SUM(payment.amount) FROM customer
+                          INNER JOIN payment ON customer.customer_id = payment.customer_id
+                          GROUP BY customer.first_name
+                          ORDER BY sum DESC
+                          LIMIT 1
+
+Fourth question answer : SELECT category.name, COUNT(*) FROM category
+                          INNER JOIN film_category ON film_category.category_id = category.category_id
+                          GROUP BY category.name
+                          ORDER BY count DESC
+                          LIMIT 10
+
+Fifth question answer : SELECT COUNT(*) FROM film
+                          WHERE film.title ILIKE '%e%e%e%e%'
